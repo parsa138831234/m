@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>آموزش گرامر پایه نهم</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>به برنامه آموزش گرامر پایه نهم خوش آمدید!</h1>
+    <nav>
+      <button onclick="showSection('about')">درباره برنامه</button>
+      <button onclick="showSection('learning')">آموزش</button>
+      <button onclick="showSection('examples')">مثال‌ها</button>
+      <button onclick="showSection('practice')">تمرین</button>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="content-section hidden">
+      <h2>درباره برنامه</h2>
+      <p>
+        این برنامه توسط <strong>پارسا زمان زاده</strong>، دانش‌آموز ۱۵ ساله، طراحی شده تا گرامر پایه نهم را به صورت
+        هوشمندانه آموزش دهد.
+      </p>
+      
+    </section>
+
+    <section id="learning" class="content-section hidden">
+      <h2>آموزش گرامر</h2>
+      <div id="learningContent"></div>
+    </section>
+
+    <section id="examples" class="content-section hidden">
+      <h2>مثال‌ها</h2>
+      <div id="exampleContent"></div>
+    </section>
+
+    <section id="practice" class="content-section hidden">
+      <h2>تمرین</h2>
+      <select id="tenseSelector" onchange="loadQuiz()">
+        <option value="">انتخاب زمان</option>
+        <option value="presentSimple">حال ساده</option>
+        <option value="pastSimple">گذشته ساده</option>
+        <option value="futureSimple">آینده ساده</option>
+        <option value="presentContinuous">حال استمراری</option>
+        <option value="pastContinuous">گذشته استمراری</option>
+      </select>
+      <div id="quizContainer"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
